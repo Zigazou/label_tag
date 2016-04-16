@@ -1,0 +1,6 @@
+name = label_tag
+description = Add more choices to label formatting for fields
+package = Fields
+dependencies[] = field
+version = 7.1
+core = 7.x
