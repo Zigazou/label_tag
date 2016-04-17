@@ -1,12 +1,9 @@
 <?php
 
 /**
- * Implements hook_form_alter().
+ * Implements hook_form_field_ui_display_overview_form_alter().
  */
-function label_tag_form_alter(&$form, &$form_state, $form_id) {
-  // Our target is the display form of the field_ui module
-  if($form_id != 'field_ui_display_overview_form') return;
-
+function label_tag_form_field_ui_display_overview_form_alter(&$form, &$form_state, $form_id) {
   $new_options = array(
     'h2' => t('Heading 2'),
     'h3' => t('Heading 3'),
